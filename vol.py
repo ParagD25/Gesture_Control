@@ -8,4 +8,8 @@ while True:
     
     success,img=capture.read()
     cv2.imshow('Gesture',img)
-    cv2.waitKey(1)
+
+    if cv2.waitKey(1) & 0xff==ord('q'):
+        break
+
+cv2.destroyAllWindows()
