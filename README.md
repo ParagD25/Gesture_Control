@@ -34,7 +34,7 @@ $ source venv/bin/activate
 # Install all the libraries/frameworks mentioned above
 
 # Run Python file
-$ "python gesture.py" - Visit the URL created in cmd to see the Website locally."
+$ "python gesture.py"
 
 ```
 
