@@ -2,14 +2,16 @@ import time
 import numpy as np
 import cv2
 
-capture=cv2.VideoCapture(0)
+cap=cv2.VideoCapture(0)
 
 while True:
-    
-    success,img=capture.read()
-    cv2.imshow('Gesture',img)
 
-    if cv2.waitKey(1) & 0xff==ord('q'):
+    ret,frame=cap.read()
+
+    cv2.imshow('Gesture',frame)
+
+    if cv2.waitKey(1) & 0xFF==ord('q'):
         break
 
+cap.release()
 cv2.destroyAllWindows()
